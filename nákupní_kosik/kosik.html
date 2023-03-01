@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    Nákupní položka : <input type="text" id="nakup"/> <br>
+    <input type="button" onclick="pridej()" value="Potvrd"/> 
+
+
+    </form>
+    <p>Váš nákup:</p>
+    <span id="nakup"></span>
+</body>
+<script>
+    var polozka = []
+    function pridej()
+    {
+        let nakup = document.getElementById("nakup").value;
+        polozka.push(nakupniPolozka);
+        let retez ="";
+        for(let i = 0; i < polozka.length; i++)
+            //dotaz na posledni polozku
+        if  (i == polozka.length  - 1 )
+        {đ
+            
+            retez = retez + polozka[i]+ 
+        }
+        elseif
+        {
+            retez  = retez  + polozka  [i]+ ",";
+        }
+        
+        document.getElementById("result").innerHTML = retez;
+
+}
+
+
+</script>
+</html>

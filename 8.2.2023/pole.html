@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let denTyden = new Array("Neděle","Pondělí","Úterý","Středa","Čtvrtek","Pátek","Sobota");
+        let Datum = new Date();
+        let cisloDne = datm.getDay();
+        document.writeln("Dneska je "+ denTyden[cisloDne]);
+
+        let pole1 = ["Hodnota0","Hodnota1",,"Hodnota2",,"Hodnota4"];
+        for(let i = 0; i < pole1.length; i++)
+        {
+            document.writeln(pole1[i] + " ");
+        }
+
+        let pol2 = new Array();
+        let pol3 = [];
+        //nplneni pole o 10ti prvcích od 1 do 10
+        for(let i = 0; i < 10; i++)
+        {
+            pol3[i] = i + 1 ;
+        }
+        for(let prvek of pol3)
+        {
+            document.writeln(prvek);
+        }
+        pol3["pozdrav"] = "Ahoj";
+        pol3.push(45);
+        pol3.sort();
+
+        let potraviny = [];
+        potraviny["Ovoce"] = ["Jablko","Hruska","Hrozen","Citron"];
+        potraviny["Zelenina"] = ["Mrkev","Celer","Okurek","Cibule"];
+        document.writeln(potraviny["Ovoce"][2]);
+    </script>
+</body>
+</html>
